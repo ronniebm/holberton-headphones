@@ -1,0 +1,50 @@
+/* FONT: 'Source Sans Pro' */
+/* ----------------------- */
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('SourceSansPro-Light.woff2') format('woff2'),
+      url('SourceSansPro-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('SourceSansPro-Regular.woff2') format('woff2'),
+      url('SourceSansPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('SourceSansPro-Bold.woff2') format('woff2'),
+      url('SourceSansPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* FONT: 'Spin Cycle 3d Ot' */
+/* ------------------------ */
+@font-face {
+  font-family: 'Spin Cycle 3d Ot';
+  src: url('../../assets/font/SpinCycle3DOT.woff') format('woff'),
+       url('../../assets/font/SpinCycle3DOT.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* FONT: 'Spin Cycle Ot (it's NOT 3d !)' */
+/* ------------------------ */
+@font-face {
+  font-family: 'Spin Cycle Ot';
+  src: url('../../assets/font/SpinCycleOT.woff') format('woff'),
+       url('../../assets/font/SpinCycleOT.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
