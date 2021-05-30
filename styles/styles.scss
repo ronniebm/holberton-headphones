@@ -2,3 +2,106 @@
 @import './settings/_general.scss';
 @import './settings/_colors.scss';
 
+.header-hero-section {
+  background-image: url('../assets/img/headphones_hero_1.jpg');
+  background-position-x: -383px;
+  background-position-y: -40px;
+  background-repeat: no-repeat;
+  background-color: #071629;
+  background-size: cover;
+  height: 869px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 31px 20px 0 20px;
+
+  &__burger {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+
+    &__line {
+      width: 13px;
+      height: 2px;
+      background-color: white;
+      border-radius: 4px;
+      
+      &::before, &::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background-color: white;
+        border-radius: 4px;
+        transform: translateY(-6.5px);
+      }
+
+      &::after {
+        transform: translateY(6.5px);
+      }
+    }
+  }
+
+  &__logo {
+    &__img {
+      width: 180px;
+      margin-right: 20vw;
+    }
+  }
+  
+  &__menu {
+    display: none;
+  }
+}
+
+.hero {
+  margin-top: 243px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title, &__subtitle {
+    font-weight: bold;
+    text-align: center;
+    color: white;
+  }
+
+  &__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  &__subtitle {
+    margin-top: 7px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 279px;
+  }
+
+  &__button {
+    margin-top: 20px;
+    padding: 13px 31px;
+    border-radius: 22px;
+    text-decoration: none;
+    background-color: $color-link-red;
+    /* ---------------------------- */
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+  }
+
+  &__text {
+    margin: 65px 20px 106px 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+    color: white;
+  }
+}
