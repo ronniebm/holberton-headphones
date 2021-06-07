@@ -1,0 +1,330 @@
+/* FONT: 'Source Sans Pro' */
+/* ----------------------- */
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../../assets/font/SourceSansPro-Light.woff2") format("woff2"), url("../../assets/font/SourceSansPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../../assets/font/SourceSansPro-Regular.woff2") format("woff2"), url("../../assets/font/SourceSansPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../../assets/font/SourceSansPro-Bold.woff2") format("woff2"), url("../../assets/font/SourceSansPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* FONT: 'Spin Cycle 3d Ot' */
+/* ------------------------ */
+@font-face {
+  font-family: 'Spin Cycle 3d Ot';
+  src: url("../../assets/font/SpinCycle3DOT.woff") format("woff"), url("../../assets/font/SpinCycle3DOT.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* FONT: 'Spin Cycle Ot (it's NOT 3d !)' */
+/* ------------------------ */
+@font-face {
+  font-family: 'Spin Cycle Ot';
+  src: url("../../assets/font/SpinCycleOT.woff") format("woff"), url("../../assets/font/SpinCycleOT.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: 'Source Sans Pro', Arial,  Helvetica,  sans-serif, 'Spin Cicle Ot',  'Spin Cycle 3d Ot';
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Section Style Imports */
+/* ---------------------------------- */
+/* 'header-hero-section' styles START */
+/* ---------------------------------- */
+.header-hero-section {
+  background-image: url("../assets/img/headphones_hero_1.jpg");
+  background-position-x: -383px;
+  background-position-y: -40px;
+  background-repeat: no-repeat;
+  background-color: #071629;
+  background-size: cover;
+  height: 869px;
+  /* ------------- */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 31px 20px 0 20px;
+  position: relative;
+}
+
+.header__burger {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header__burger__wrapper {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.header__burger__line {
+  width: 13px;
+  height: 2px;
+  background-color: white;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.header__burger__line::before, .header__burger__line::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  border-radius: 4px;
+  transform: translateY(-6.5px);
+  transition: all 0.2s ease-in-out;
+}
+
+.header__burger__line::after {
+  transform: translateY(6.5px);
+}
+
+.header__logo {
+  position: absolute;
+  left: 32%;
+}
+
+.header__logo__img {
+  width: 180px;
+  margin-right: 17vw;
+}
+
+.header__menu {
+  position: absolute;
+  left: 0;
+  bottom: -110px;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.header__menu__ul {
+  display: flex;
+  flex-direction: column;
+  height: 140px;
+}
+
+.header__menu__li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header__menu__a {
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+
+.header__menu__a:last-child {
+  margin-bottom: 0;
+}
+
+.header__menu__a:hover {
+  color: #FF6565;
+  transition: all 0.2s ease-in-out;
+}
+
+.header--active .header__menu {
+  bottom: -180px;
+  opacity: 1;
+  transition: all 0.25s ease-in-out;
+}
+
+.header--active .header__burger__line {
+  width: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.header--active .header__burger__line::before {
+  transform: rotate(45deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.header--active .header__burger__line::after {
+  transform: rotate(-45deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.hero {
+  margin-top: 243px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__title, .hero__subtitle {
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.hero__title {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.hero__subtitle {
+  margin-top: 7px;
+  font-size: 16px;
+  line-height: 20px;
+  width: 279px;
+}
+
+.hero__button {
+  margin-top: 20px;
+  padding: 13px 31px;
+  border-radius: 22px;
+  text-decoration: none;
+  background-color: #FF6565;
+  /* ---------------------------- */
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero__button:hover {
+  background-color: white;
+  color: #FF6565;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero__text {
+  margin: 65px 20px 106px 20px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-hero-section {
+    background-position-x: -343px;
+    background-position-y: 0px;
+  }
+  .header {
+    padding: 30px 25px 0 25px;
+    justify-content: left;
+  }
+  .header__burger {
+    display: none;
+  }
+  .header__logo {
+    position: initial;
+  }
+  .header__logo__img {
+    margin-right: 100px;
+  }
+  .header__menu {
+    position: initial;
+    opacity: 1;
+  }
+  .header__menu__ul {
+    flex-direction: row;
+    height: 0px;
+  }
+  .header__menu__li {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .header__menu__a {
+    text-align: right;
+    color: white;
+  }
+  .hero__title {
+    margin-top: 95px;
+  }
+  .hero__subtitle {
+    width: auto;
+  }
+  .hero__button {
+    margin-top: 40px;
+  }
+  .hero__text {
+    margin-top: 65px;
+    width: 637px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header {
+    width: 1200px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .header-hero-section {
+    background-position-x: 0px;
+    background-position-y: 0px;
+  }
+  .header-hero-section__wrapper {
+    max-width: 1200px;
+  }
+  .header {
+    padding: 30px 200px 0 200px;
+    justify-content: space-between;
+  }
+  .header__menu {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .header {
+    width: 1400px;
+  }
+  .header-hero-section__wrapper {
+    min-width: 1400px;
+  }
+}

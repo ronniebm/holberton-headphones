@@ -1,0 +1,85 @@
+/* ----------------------------- */
+/* 'footer' section styles START */
+/* ----------------------------- */
+
+.footer-wrapper {
+  padding-top: 48px;
+  background-color: $black-carbon;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.footer {
+
+  &__img {
+    width: 240px;
+  }
+
+  &__social {
+    margin-top: 45px;
+    margin-bottom: 94px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+
+    &__link {
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__end-text {
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.35;
+    position: absolute;
+    bottom: 34px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .footer-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 110px 44px 110px 44px;
+  }
+
+  .footer {
+    &__social {
+      margin: 0;
+    }
+    &__end-text {
+      left: calc(#{50vw} - 60px);
+    }
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .footer-wrapper {
+    padding: 90px 200px 129px 200px;
+  }
+
+  .footer {
+    &__end-text {
+      left: calc(#{50vw} - 60px);
+    }
+  }
+
+}

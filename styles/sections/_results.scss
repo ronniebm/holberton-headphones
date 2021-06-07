@@ -1,0 +1,158 @@
+/* ------------------------------ */
+/* 'results-section' styles START */
+/* ------------------------------ */
+.results_wrapper {
+  padding: 125px 35px 69px 35px;
+  background-image: url('../assets/img/headphones_hero_2.jpg');
+  background-color: $black-carbon;
+  background-repeat: no-repeat;
+  /* ------------ */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.results {
+  &__title {
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    color: white;
+  }
+  &__text {
+    margin-top: 46px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: white;
+  }
+}
+
+.results-cards {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(360deg, rgba(7,22,41,1) 0%, rgba(7,22,41,1) 62%, rgba(91,191,184,0) 100%);
+  padding-top: 77px;
+
+  &__card {
+    width: 190px;
+    height: 190px;
+    background-image: url('../assets/img/pentagone.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 42px;
+    transition: all 0.3s ease-in-out;
+    /* ----------- */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+      font-weight: bold;
+      font-size: 46px;
+      line-height: 26px;
+      text-align: center;
+      color: white;
+    }
+    &__text {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 26px;
+      text-align: center;
+      color: white;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .results {
+    &__text {
+      width: 637px;  
+    }
+  }
+
+  .results-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__card {
+      
+      &:nth-child(1), &:nth-child(3) {
+        margin-left: 24px;
+        margin-right: 76px;
+      }
+      &:last-child {
+        margin-bottom: 42px;
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width: 770px) {
+
+  .results_wrapper {
+    padding-bottom: 0;
+  }
+
+  .results-cards {
+    padding-bottom: 79px;
+
+    &__card {
+      &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+        margin: 0px;
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width: 900px) {
+
+  .results-cards {
+
+    &__card {
+      &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+        margin-right: 15px;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .results-cards {
+
+    &__card {
+      &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+        margin-right: 45px;
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width: 1400px) {
+
+  .results-cards {
+
+    &__card {
+      &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+        margin-right: 76px;
+      }
+    }
+  }
+
+}
