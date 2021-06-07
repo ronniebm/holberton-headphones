@@ -22,15 +22,6 @@
 </span>
 <br>
 <br>
-
-<!-- image and subtitle section -->
-
-<img
-  src="https://www.visme.co/wp-content/themes/visme/images/lp-assets-icons-mobile.svg"
-  width="150px"
-/>
-
-
 <br>
 
 <!-- Learning objectives section -->
@@ -46,6 +37,9 @@ Here the final result:
   <br>
   <img src="./assets/img/iphone.gif"
   width="300px">
+
+  Check the website in: <br>
+  https://hardcore-lumiere-28cda7.netlify.app/
 
 <!-- Social networks section -->
 
